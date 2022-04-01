@@ -12,3 +12,4 @@ __init__.py
 *.pdf
 *.png
 *.jpeg
+*_warmup.ipynb
