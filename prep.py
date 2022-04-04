@@ -47,6 +47,10 @@ def get_Xy_dummies(X_train, X_validate, X_test):
     return X_train, X_validate, X_test
 
 def minmax_scale_data(train, validate, test, cols_to_scale, return_scaler=False):
+    '''
+    Takes in train/validate/test splits of a prepared dataset, a list of its columns to scale, 
+    and an option to return the scaler; returns scaled versions of the splits and the scaler
+    if the option is set to True.'''
 
     train_scaled = train.copy()
     validate_scaled = validate.copy()
