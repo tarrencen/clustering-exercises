@@ -11,7 +11,7 @@ from sklearn.linear_model import LinearRegression
 def get_splits(df):
     train, test = train_test_split(df, test_size= 0.2, random_state=302)
     train, validate = train_test_split(train, test_size= 0.3, random_state=302)
-    return train, test, validate
+    return train, validate, test
     
 
 
